@@ -15,17 +15,138 @@
     font-weight: 700;
 }
 
-body{
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height:  100vh;
     font-family: Inter;
-    background-color: rgb(148, 155, 151);
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    
+    
+}
+
+.header {
+    height: 62px;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background: url(./assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+
+}
+
+.header-logo {
+    left: 0%;
+    right: 0%;
+    top: 10%;
+    bottom: 10%;
+}
+
+
+.nav-list { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    list-style: none;
+    margin-left: 510px;
+    
+}
+
+.nav-item {
+    margin-right: 30px;
+    
+
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+
+.container {
+    width: 1440px; 
+    margin: 0 auto;
+    padding: 0 20px;
+ }
+
+ .hero-container {
+     background-image: url(/assets/img/bg.jpg);
+     background-position: center -90px;
+     background-repeat: no-repeat;
+     min-height: 100vh;
+     
+     
+     
+ }
+
+ .lang-button {
+    font-family: inherit;
+    cursor: pointer;
+    left: 93.75%;
+    right: 1.39%;
+    top: 20px;
+    border: 0px;
+    padding: 0px;
+    background-color: transparent;
+    outline: none;
+    
+}
+
+.gold-button {
+    color:#bdae82;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.white-button {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#fff;
+
 }
 
 h1, h2 {
     font-family: Merriweather;
+    color: white;
 }
 
-.container {
-   width: 1440px; 
-   margin: 0 auto;
-   padding: 0 20px;
-}
