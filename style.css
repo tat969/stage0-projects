@@ -213,6 +213,132 @@ body {
     line-height: 80px;
     letter-spacing: 0em;
     text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
 
 }
 
+.skill-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: no-wrap;
+}
+
+.skill-item {
+    background-position: center top;
+    padding-top: 50px;
+    
+    
+}
+
+.skill-item:nth-child(1) {
+    background-image: url('./assets/svg/camera.svg');
+    background-size: 62px 50px;
+    background-repeat: no-repeat;
+  }
+
+.skill-item:nth-child(2) {
+    background-image: url('./assets/svg/video.svg');
+    background-size: 62px 50px;
+    background-repeat: no-repeat;
+}
+
+.skill-item:nth-child(3) {
+    background-image: url('./assets/svg/image.svg');
+    background-size: 62px 50px;
+    background-repeat: no-repeat;
+    
+}
+
+.skill-item:nth-child(4) {
+    background-image: url('./assets/svg/mic.svg');
+    background-size: 62px 50px;
+    background-repeat: no-repeat;
+}
+
+.skill-title {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+
+}
+
+.skill-text {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+
+}
+
+.portfolio-button {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-bottom: 50px;
+
+}
+
+.black-button {
+    height: 55px;
+    width: 220px;
+    font-family: inherit;
+    cursor: pointer;
+    height: 55px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    border: 2px solid #BDAE82;
+    box-sizing: border-box;
+    border-radius: 0px;
+    background-color: transparent;
+    outline: none;
+}
+
+.portfolio-title {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #BDAE82;
+    
+
+}
+
+.gold-title {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.portfolio-image {
+    height: 560px;
+    width: 450px;
+    left: 950px;
+    top: 585px;
+    border-radius: 0px;
+
+}
