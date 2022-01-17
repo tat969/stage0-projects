@@ -373,6 +373,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 .standard-price, .premium-price, .gold-price {
@@ -432,4 +433,48 @@ body {
     text-align: center;
     color: #FFFFFF;
 }
+
+.contacts-container {
+    
+    background-image: url("./assets/img/contacts.png");
+    background-position: center center;
+    height: 80vh;
+}
+
+.contacts-data {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 100px;
+    gap: 15px;
+    
+}
+
+ ::placeholder {
+     font-family: inherit;
+     color: #bdae82;
+     font-size: 20px;
+     background-color: transparent;
+
+ }
+
+.mail {
+    height: 50px;
+    width: 450px;
+    left: 970px;
+    top: 180px;
+    border-radius: 0px;
+    background: #00000080;
+    fill: rgba(0, 0, 0, 0.5);
+    border: solid 2px #BDAE82;
+
+}
+
+.contacts-text {
+    background: #00000080;
+    fill: rgba(0, 0, 0, 0.5);
+    border: solid 2px #BDAE82;
+}
+
 
