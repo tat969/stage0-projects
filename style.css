@@ -1,3 +1,12 @@
+:root {
+    --color-gold: #bdae82;
+    --color-black: #000;
+    --color-white: #fff;
+    --font1: 60px;
+    --font2: 40px;
+  
+}
+
 @font-face {
     font-family: Merriweather;
     src: url(assets/fonts/Merriweather/Merriweather-Bold.ttf);
@@ -37,10 +46,6 @@ body {
     height: 100%;
     
     
-}
-
-.header {
-
 }
 
 .header-container {
@@ -112,8 +117,8 @@ body {
     
 }
 
-.gold-button {
-    color:#bdae82;
+.en-button {
+    color:var(--color-gold);
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
@@ -124,7 +129,7 @@ body {
 
 }
 
-.white-button {
+.ru-button {
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
@@ -135,7 +140,7 @@ body {
     color:#fff;
 
 }
-.hero-button {
+.gold-button {
     height: 55px;
     width: 220px;
     left: 0px;
@@ -179,8 +184,6 @@ body {
     left: 0%;
     right: 0%;
     top: 0%;
-    
-    
     color: white;
     align: center;
     font-family: Merriweather;
@@ -215,8 +218,12 @@ body {
     text-align: center;
     padding-bottom: 50px;
     padding-top: 50px;
+    text-align: center;
 
 }
+
+
+
 
 .skill-items {
     display: flex;
@@ -366,6 +373,7 @@ body {
     outline: none;
     cursor: pointer;
     
+    
 
 }
 
@@ -374,30 +382,35 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 100px;
+    
 }
 
 .standard-price, .premium-price, .gold-price {
-    height: 505px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
     width: 450px;
     left: 0px;
     top: 0px;
     border: 3px solid #BDAE82;
     box-sizing: border-box;
     border-radius: 0px;
-    gap: 25px;
+    gap: 20px;
+    
     
 }
 
 .price-title {
     width: 128px;
-    height: 56px;
+    height: px;
     left: calc(50% - 128px/2);
-    top: 43px;
+    top: 4px;
     font-family: Merriweather;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
-    line-height: 56px;
+    line-height: 0.5px;
     text-align: center;
     color: #FFFFFF;
 }
@@ -411,7 +424,7 @@ body {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    line-height: 48px;
+    line-height: 0.5px;
     text-align: center;
     color: #BDAE82;
 
@@ -429,16 +442,17 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 36px;
+    line-height:px;
     text-align: center;
     color: #FFFFFF;
+    
 }
 
 .contacts-container {
     
     background-image: url("./assets/img/contacts.png");
     background-position: center center;
-    height: 80vh;
+    
 }
 
 .contacts-data {
@@ -473,8 +487,89 @@ body {
 
 .contacts-text {
     background: #00000080;
+    background-size: auto 700px;
+    position: center center;
     fill: rgba(0, 0, 0, 0.5);
     border: solid 2px #BDAE82;
 }
 
+textarea {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: #00000080;
+    fill: rgba(0, 0, 0, 0.5);
+    border: solid 2px #BDAE82;
+    resize: none;
 
+}
+
+
+
+.button-contacts {
+    text-align: end;
+    padding-right: 330px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+.footer-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 1440px;
+    padding-top: 50px;
+    border-radius: 0px;
+    gap: 30px;
+
+}
+
+.footer-data {
+    height: 50px;
+    width: 182px;
+    left: 20px;
+    top: 50px;
+    border-radius: 0px;
+    color:  #FFFFFF;
+    
+
+}
+ 
+.rsschool {
+    height: 50px;
+width: 211px;
+left: 615px;
+top: 50px;
+border-radius: nullpx;
+color: #FFFFFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: left;
+
+
+}
+
+.social-list {
+    height: 50px;
+    width: 188px;
+    left: 1232px;
+    top: 50px;
+    border-radius: 0px;
+    color: #fff;
+    padding-left: 50px;
+    
+}
+
+.footer-title {
+    padding-left: 520px;
+}
