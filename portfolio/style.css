@@ -295,6 +295,12 @@ body {
 
 }
 
+.portfolio-button_active {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+
+}
+
 .black-button {
     height: 55px;
     width: 220px;
