@@ -38,15 +38,13 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-header {
     background: url("/portfolio/assets/img/bg.jpg");
     background-repeat: n0-repeat;
     background-position: center 0;
     margin: 0 auto;
     padding: 0 15px;
     width: 100%;
+    
 }
 
 .header-logo {
@@ -85,7 +83,7 @@ header {
 
 }
 
-/*.lang-button {
+.lang-button {
     font-family: inherit;
     cursor: pointer;
     left: 93.75%;
@@ -140,7 +138,7 @@ header {
 }
 .slash {
     color: #fff;
-}*/
+}
 
 .header_burger {
     display: none;
@@ -322,15 +320,14 @@ main {
 
 }
 /*portfolio-styles*/
-.portfolio-button {
+.portfolio-btns {
     display: flex;
     justify-content: center;
     gap: 5px;
     padding-bottom: 50px;
 
 }
-
-.black-button {
+.portfolio-btn {
     height: 55px;
     width: 220px;
     font-family: inherit;
@@ -342,9 +339,18 @@ main {
     border: 2px solid #BDAE82;
     box-sizing: border-box;
     border-radius: 0px;
-    background-color: transparent;
+    background-color: var(--color-black);
     outline: none;
+    color: var(--color-gold);
+    
 }
+
+.active{
+    color: var(--color-black);
+    background-color: var(--color-gold);
+}
+
+
 
 .portfolio-title {
     font-family: Inter;
@@ -354,9 +360,6 @@ main {
     line-height: 40px;
     letter-spacing: 0em;
     text-align: center;
-    color: #BDAE82;
-    
-
 }
 
 .gold-title {
