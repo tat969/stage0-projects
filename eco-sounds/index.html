@@ -5,29 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/favicon.ico">
     <title>eco_sounds</title>
 </head>
 <body>
     <header class="header">
         <div class="container header_container">
-            <img src="./assets/svg/logo.svg" class="header_logo" alt="logo">
+            <a href="#"><img src="./assets/svg/logo.svg" class="header_logo" alt="logo"></a>
             <nav class="nav">
                 <ul class="nav-items">
-                    <li class="header_title">Соловей</li>
-                    <li class="header_title">Дрозд</li>
-                    <li class="header_title">Малиновка</li>
-                    <li class="header_title">Жаворонок</li>
-                    <li class="header_title">Славка</li>
+                    <li class="nav-item" data-image="solovey">Соловей</li>
+                    <li class="nav-item" data-image="drozd">Дрозд</li>
+                    <li class="nav-item" data-image="zarynka">Зарянка</li>
+                    <li class="nav-item" data-image="javoronok">Жаворонок</li>
+                    <li class="nav-item" data-image="slavka">Славка</li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="main">
-        <div class="container"></div>
-    </main>
+        <div class="container audio_container">
+            <img src="./assets/img/forest.jpg" alt="forest" data-image="forest" class="audio_image">
+            <audio>
+                <source src="./assets/audio/forest.mp3">
+            </audio> 
+            <button class="play-btn"></button>
+        </main>
     <footer class="footer">
-        <div class="container">
-            
+        
         </div>
     </footer>
 <script src="index.js"></script>
