@@ -97,6 +97,7 @@
     
 }
 .play-btn:hover {
+    filter: invert(40%) sepia(30%) brightness(80%) saturate(5) contrast(70%) opacity(1);
 }
 
 
@@ -112,10 +113,8 @@
     
 }
 
-.player_btn_img{
-    width: 200px;
-    height: 200px;
-    
+.pause:hover{
+    filter: invert(40%) sepia(30%) brightness(80%) saturate(5) contrast(70%) opacity(1);
 }
 
 .footer_container{
