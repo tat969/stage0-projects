@@ -12,6 +12,8 @@
      background-color: black;
      margin: 0 auto;
      font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+     overflow-y: hidden;
+     
  }
  .header {
     
@@ -73,6 +75,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: calc(100vh - 150px);
 }
 .audio_image {
     width: 100%;
@@ -93,6 +96,9 @@
     cursor: pointer;
     
 }
+.play-btn:hover {
+}
+
 
 .pause {
     background-image: url('./assets/svg/pause.svg');
@@ -112,7 +118,45 @@
     
 }
 
-.footer {
+.footer_container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: (100% - 50px);
     
-    height: 50px;
+    
+}
+.footer_data {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 21px;
+    gap: 15px;
+    
+}
+
+.github {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.github:hover {
+    color: #bdae82;
+}
+
+.rss-logo {
+    width: 120px;
+    height: 80px;
+    background-image: url('./assets/svg/rss.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+
+    
+}
+
+.rss-logo:hover {
+    filter: invert(40%) sepia(30%) brightness(80%) saturate(5) contrast(90%) opacity(1);
 }

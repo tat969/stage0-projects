@@ -14,27 +14,31 @@
             <a href="#"><img src="./assets/svg/logo.svg" class="header_logo" alt="logo"></a>
             <nav class="nav">
                 <ul class="nav-items">
-                    <li class="nav-item" data-image="solovey">Соловей</li>
-                    <li class="nav-item" data-image="drozd">Дрозд</li>
-                    <li class="nav-item" data-image="zarynka">Зарянка</li>
-                    <li class="nav-item" data-image="javoronok">Жаворонок</li>
-                    <li class="nav-item" data-image="slavka">Славка</li>
+                    <li class="nav-item" data-item="solovey" data-sound="solovey">Соловей</li>
+                    <li class="nav-item" data-item="drozd" data-sound="drozd">Дрозд</li>
+                    <li class="nav-item" data-item="zarynka" data-sound="zarynka">Зарянка</li>
+                    <li class="nav-item" data-item="javoronok" data-sound="javoronok">Жаворонок</li>
+                    <li class="nav-item" data-item="slavka" data-sound="slavka">Славка</li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="main">
         <div class="container audio_container">
-            <img src="./assets/img/forest.jpg" alt="forest" data-image="forest" class="audio_image">
-            <audio>
-                <source src="./assets/audio/forest.mp3">
-            </audio> 
+            <img src="./assets/img/forest.jpg" alt="forest" data-item="forest" class="audio_image">
+            <audio src="./assets/audio/forest.mp3" type="audio/mp3" data-sound="forest" class="audio_music"></audio> 
             <button class="play-btn"></button>
         </main>
-    <footer class="footer">
-        
+    <!--<footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_data">
+                <p class="copyright">©</p>
+                <p class="year">2022</p>
+                <a class="github" href="https://github.com/tat969">github</a> 
+            </div>
+            <a class="rss-logo" href="https://rs.school/js-stage0/"></a> 
         </div>
-    </footer>
+    </footer>-->
 <script src="index.js"></script>
 </body>
 </html>
