@@ -1,3 +1,9 @@
+:root {
+    --color-gold: #bdae82;
+    --color-black: #000;
+    --color-white: #fff;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,9 +15,9 @@
  body {
      display: flex;
      flex-direction: column;
-     background-color: black;
+     background-color: var(--color-black);
      margin: 0 auto;
-     font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+     font-family:Arial, Helvetica, sans-serif;
      overflow-y: hidden;
      
  }
@@ -34,15 +40,14 @@
     margin-top: 10px;
     margin-bottom: 5px;
     margin-left: 15px;
-    filter: invert(40%) sepia(30%) brightness(80%) saturate(5) contrast(90%) opacity(1);
-    transition: 0.3s;
+    filter: grayscale(40);
     cursor: pointer;
     
 }
 
 .header_logo:hover {
-    filter: grayscale(50);
-    
+    filter: invert(17%) sepia(14%) saturate(716%) hue-rotate(7deg) brightness(90%) contrast(86%);
+    transition: 2s;
 }
 
 .nav-items {
@@ -57,13 +62,17 @@
 }
 
 .nav-item {
-    color: white;
+    color: var(--color-white);
     font-size: 20px;
     line-height: 50px;
     
 }
 .nav-item:hover {
-    color: #bdae82;
+    color: var(--color-gold);
+}
+
+.active {
+    color: var(--color-gold);
 }
 .container {
     max-width: 1440px;
@@ -85,8 +94,8 @@
     background-image: url('./assets/svg/play.svg');
     background-repeat: no-repeat;
     background-position: center;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-size: contain;
     position: absolute;
     border-radius: 0px;
@@ -97,7 +106,8 @@
     
 }
 .play-btn:hover {
-    filter: invert(40%) sepia(30%) brightness(80%) saturate(5) contrast(70%) opacity(1);
+    filter: sepia(30%) grayscale(10%); 
+    transition: 0.3s;
 }
 
 
@@ -114,7 +124,8 @@
 }
 
 .pause:hover{
-    filter: invert(40%) sepia(30%) brightness(80%) saturate(5) contrast(70%) opacity(1);
+    filter: sepia(30%) grayscale(10%); 
+    transition: 0.3s;
 }
 
 .footer_container{
@@ -129,7 +140,7 @@
 .footer_data {
     display: flex;
     flex-direction: row;
-    color: white;
+    color: var(--color-white);
     font-size: 21px;
     gap: 15px;
     
@@ -137,12 +148,13 @@
 
 .github {
     text-decoration: none;
-    color: white;
+    color: var(--color-white);
     
 }
 
 .github:hover {
-    color: #bdae82;
+    color: var(--color-gold);
+    transition: 0.8s;
 }
 
 .rss-logo {
@@ -157,5 +169,6 @@
 }
 
 .rss-logo:hover {
-    filter: invert(40%) sepia(30%) brightness(80%) saturate(5) contrast(90%) opacity(1);
+    filter: invert(17%) sepia(14%) saturate(716%) hue-rotate(7deg) brightness(90%) contrast(86%);
+    transition: 0.8s;
 }

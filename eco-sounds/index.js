@@ -11,7 +11,7 @@ function changeImage(event) {
     audioImages.src = `./assets/img/${image}.jpg`;
     
   }
-
+  
 }
 audioBtns.forEach(
   function (audioBtn) {
@@ -24,7 +24,7 @@ function changeAudio(event) {
   if(event.target.classList.contains('nav-item')) {
     const bird = event.target.dataset.sound;
     audio.src = `./assets/audio/${bird}.mp3`;
-    
+    audio.setAttribute("autoplay","true");
   }
 }
 
@@ -40,6 +40,7 @@ function playAudio() {
     audio.currentTime = 0;
     audio.play();
     isPlay = true;
+    
 
   } else {
       audio.pause();
@@ -58,6 +59,15 @@ function toggleBtn() {
 
 playBtn.addEventListener('click', toggleBtn);
 
+//класс active
+function changeColor (event) {
+  audioBtn.classList.toggle('active');
+}
 
 
+audioBtns.forEach(
+  function (audioBtns) {
+    audioBtns.addEventListener('click', changeColor);
+  }
+) 
 
