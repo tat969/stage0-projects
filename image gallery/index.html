@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato&family=Merriweather:wght@700&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/278f21e897.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato&family=Merriweather:wght@700&family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/278f21e897.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Image gallery</title>
-</head>
-<body>
-    <div class="container">
-        <header class="header_container">
-            <div class="header_name">
-                <img src="./assets/svg/camera.svg" class="header_logo">
-                <span class="header_title">Unsplash API</span>
-            </div>
-            <div class="search_box">
-                <input type="search" class="search-txt" placeholder="Search..." name="search">
-                <a href="#" class="search_btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-            </div>
-        </header>
-        <main>
-            <div class="img_wrapper">
-                <img src="./assets/spring.jfif"
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="container footer_container">
-                <div class="footer_data">
-                    <p class="copyright">©</p>
-                    <p class="year">2022</p>
-                    <a class="github" href="https://github.com/tat969">github</a> 
-                </div>
-                <a class="rss-logo" href="https://rs.school/js-stage0/"></a> 
-            </div>
-        </footer>
-    </div>
-  
-<script src="index.js"></script>
-</body>
+  </head>
+  <body>
+    <header class="container header_container">
+      <div class="header_name">
+        <img src="./assets/svg/camera.svg" class="header_logo" />
+        <a href="index.html" class="header_link">
+          <span class="header_title">RSS Gallery</span>
+        </a>
+      </div>
+      <div class="search_box">
+        <form action="">
+          <input
+            type="search"
+            class="search-txt"
+            placeholder="Search..."
+            name="search"
+            autocomplete="off"
+          />
+          <a href="#" class="search_btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </form>
+      </div>
+    </header>
+    <main class="main container">
+      <div class="img_wrapper">
+        <div class="cards">
+          <div class="card">
+            <img src="./assets/spring.jfif" class="photo" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container footer_container">
+      <div class="footer_data">
+        <p class="copyright">©</p>
+        <p class="year">2022</p>
+        <a class="github" href="https://github.com/tat969">github</a>
+      </div>
+      <a class="rss-logo" href="https://rs.school/js-stage0/"></a>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
