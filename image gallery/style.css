@@ -21,7 +21,7 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: var(--color-black);
-    font-family: 'Lato',sans-serif;
+    font-family: 'Comfortaa', cursive;
     color: var(--color-white);
     margin-left: 50px;
     margin-right: 50px;
@@ -83,7 +83,8 @@ html, body {
 }
 .search_box input {
     box-sizing: border-box;
-    width: 100%;
+    width: 90%;
+   
     
 }
 .search_box:hover {
