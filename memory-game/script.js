@@ -1,9 +1,9 @@
-const card = document.querySelectorAll('.memory_card');
+const cards = document.querySelectorAll('.memory_card');
 let ClickedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
 
-card.forEach(card => card.addEventListener('click', flipCard));
+cards.forEach(card => card.addEventListener('click', flipCard));
 
 function flipCard() {
   if(lockBoard) return;
@@ -54,3 +54,9 @@ function resetBoard () {
   [firstCard, secondCard] = [null, null];
 }
 
+(function mixCards() {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * 12);
+    card.style.order = randomPos;
+  });
+})();
