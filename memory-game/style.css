@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+   min-height: 100vh;
+    margin: 0 auto;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Shizuru', cursive;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: rgb(73, 229, 240);
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+   
+}
+
+.header-title {
+    text-align: center;
+    cursor: pointer;
+}
+
+.header-title:hover {
+    color: blueviolet;
+    transition: 0.5s;
+}
+.main_container {
+    flex-grow: 1;
+    margin-top: 5px;
+
+   
+}
+.memory_game {
+    width: 600px;
+    height: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px
+    
+}
+
+
+.memory_card {
+    flex: 0 1  calc(100%/4 - 20px*2);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.memory_card.flip{
+    transform: rotateY(180deg);
+}
+
+.memory_card:active {
+    transform: scale(0.95);
+    transition: 0.4s;
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    position: absolute;
+    border-radius: 5px;
+    background: #f1f36c;
+    backface-visibility: hidden;
+  }
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.footer_container{
+    width: 100%;
+    flex-grow: 0;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;   
+    
+}
+.footer_data {
+    display: flex;
+    flex-direction: row;
+    color: var(--color-white);
+    font-size: 21px;
+    gap: 20px;
+    
+}
+
+.github {
+    height: 40px;
+    width: 40px;
+    background-image: url('./assets/img/github-logo.png');
+    background-size: cover;
+    cursor: pointer;
+    text-decoration: none;
+   
+    
+}
+
+.github:hover {
+    filter: invert(25%) sepia(93%) saturate(1904%) hue-rotate(343deg) brightness(101%) contrast(92%);
+    transition: 0.3s;
+}
+
+.rss-logo {
+    width: 120px;
+    height: 80px;
+    background-image: url('./assets/svg/rss.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+
+    
+}
+
+.rss-logo:hover {
+    filter: invert(25%) sepia(93%) saturate(1904%) hue-rotate(343deg) brightness(101%) contrast(92%);
+    transition: 0.3s;
+
+}
