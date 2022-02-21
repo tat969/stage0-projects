@@ -17,36 +17,45 @@ body {
     font-size: 20px;
     color: whitesmoke;
     background-color: rgb(73, 229, 240);
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     overflow: hidden;
 }
 
 .container {
-    width: 100%;
+    max-width: 1240px;
     margin: 0 auto;
    
 }
 
+.header-title {
+    margin-right: 70px;
+    cursor: pointer;
+}
+
+.header-title:hover {
+    color: blueviolet;
+    transition: 0.5s;
+}
 .main_container {
     flex-grow: 1;
-    margin-top: 15px;
+    margin-top: 5px;
 
    
 }
 .memory_game {
-    width: 540px;
-    height: 540px;
-    margin: auto;
+    width: 500px;
+    height: 480px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 5px
     
 }
 
 
 .memory_card {
-    width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
+    flex: 0 1  calc(100%/3 - 20px*2);
     margin: 5px;
     position: relative;
     transform: scale(1);
@@ -70,15 +79,18 @@ body {
     padding: 15px;
     position: absolute;
     border-radius: 5px;
-    background: #1f5480;
+    background: #f1f36c;
     backface-visibility: hidden;
   }
+.front-face {
+    transform: rotateY(180deg);
+}
 
 .footer_container{
     width: 100%;
     flex-grow: 0;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 0 auto;   
     
